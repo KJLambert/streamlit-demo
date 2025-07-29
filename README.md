@@ -2,6 +2,7 @@
 * I decided to check out streamlit as an app deployment tool. 
 * I wanted to understand how app deployment would work in combination with using uv as the package manager. 
 * This project may not launch a particularly useful app, but is meant to serve as a template that I can refer to.
+* referring to setup used in https://github.com/data-sloth/uv-streamlit-setup.git
 
 # Project setup
 1. Initiate an empty github repo
@@ -15,7 +16,7 @@
 6.1 this should launch a local host in your terminal with whatever you've printed to streamlit.
 7. In order to build more apps with streamlit, I'll set up more structure..
 7.1 Add this to `pyproject.toml`
-`
+```
   [build-system]
   requires = ["setuptools>=42"]
   build-backend = "setuptools.build_meta"
@@ -23,5 +24,5 @@
   [tool.setuptools.packages.find]
   where = ['src']
   include = ['expansion1']
-  `
-8. I'll set up framework for testing with `uv add pytest`, and create a tests folder
+  ```
+8. I'll set up framework for testing with `uv add pytest`, and create a tests folder.

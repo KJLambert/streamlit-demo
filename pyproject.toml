@@ -14,3 +14,6 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ['src']
 include = ['expansion1']
+
+[tool.pytest.ini_options]
+pythonpath="tests"
